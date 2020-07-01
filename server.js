@@ -1,7 +1,6 @@
 import express from "express";
 import Datastore from "nedb";
 
-const port = 3000;
 const app = express();
 
 const leaderboard = new Datastore("scoreList.db");
@@ -27,7 +26,4 @@ app.get("/scoreRoom", function (request, response) {
         }
         response.json(playerInfo);
     });
-});
-app.listen(port, function () {
-    console.log("listening at port" + port);
 });
