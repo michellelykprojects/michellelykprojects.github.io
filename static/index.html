@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<meta charset="utf-8">
+<title>Match! A Memory Card Game</title>
+<link rel="stylesheet" href="default.css">
+<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<script type="module" src="board.js"></script>
+<script type="module" src="features.js"></script>
+
+<header>
+    <h1>MATCH!</h1>
+    <h2>Explore the World</h2>
+
+</header>
+
+<body>
+    <main>
+        <div id="victory-text" class="overlay-text">
+            <p class="all-matched-text">ALL MATCHED!</p>
+            You took <span id=total-flips class="tries-text">0</span> tries.
+            <div class="name-input-box">
+                <label class="enter-name" for="name">Enter your name</label>
+                <input id="inputName" placeholder="Your Name" />
+                <button id="submit-name" class="enter-button">Enter</button>
+            </div>
+        </div>
+
+        <section id="game-info" class="game-info">
+            <div id="trials">
+                Flips <span id="flips" class="flips">0</span>
+            </div>
+        </section>
+
+        <section id="grid" class="grid-box">
+            <div class="card" data-framework="malaysia">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\malaysia.png" alt="Malaysia Landmark">
+            </div>
+
+            <div class="card" data-framework="malaysia">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\malaysiaflag.jpg" alt="Malaysian Flag">
+            </div>
+
+            <div class="card" data-framework="india">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\india.png" alt="India Landmark">
+            </div>
+
+            <div class="card" data-framework="india">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\indiaflag.png" alt="Indian Flag">
+            </div>
+
+            <div class="card" data-framework="turkey">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\turkey.png" alt="Turkey Landmark">
+            </div>
+
+            <div class="card" data-framework="turkey">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\turkeyflag.jpg" alt="Turkish Flag">
+            </div>
+
+            <div class="card" data-framework="taiwan">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\taiwan.png" alt="Taiwan Landmark">
+            </div>
+
+            <div class="card" data-framework="taiwan">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\taiwanflag.png" alt="Taiwanese Flag">
+            </div>
+
+            <div class="card" data-framework="singapore">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\singapore.png" alt="Singapore Landmark">
+            </div>
+
+            <div class="card" data-framework="singapore">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\singaporeflag.jpg" alt="Singaporean Flag">
+            </div>
+
+            <div class="card" data-framework="japan">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\japan.png" alt="Japan Landmark">
+            </div>
+
+            <div class="card" data-framework="japan">
+                <img class="back-face" src=".\assets\images\cardface1.png " alt="Card">
+                <img class="front-face" src=".\assets\images\japanflag.jpg" alt="Japanese Flag">
+            </div>
+        </section>
+
+        <section class="leaderboard-page">
+            <span id="leaderboard">Click</span>
+            <a class="leaderboard-link" href="/scoreRoom">here</a> to see the scoreboard!
+        </section>
+    </main>
+</body>
+
+
+<footer>
+    <p class="footer">Match the landmark to the country flag!
+        Improve your memory while testing your general knowledge.
+        More continents coming soon...</p>
+    <a class="link" href="mailto:michelle.lee19@imperial.ac.uk" target="_blank">Contact the team!</a>
+</footer>
